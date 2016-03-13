@@ -1,0 +1,3 @@
+10cd87ef80efae9a1bc78cb705348424d43d0403
+d5ec1724cdfee4f1e3d8c7c8f2e07bff81d2ab2e
+{"4": ["d", "g"], "5": ["e", "i"], "6": ["f", "\n"], "7": ["\n", "d"], "8": ["g", "e"], "9": ["h", "f"], "10": ["i", "\n"], "11": [null, "\n\n\n>>> import test\n>>> x = test.diff_files(\"old.txt\",\"new.txt\")\n>>> x\n{4: ['d', 'g'], 5: ['e', 'i'], 6: ['f', '\\n']\n>>> test.merge(\"old.txt\",x,\"new-result.txt\")\n>>> test.merge(\"new.txt\",x,\"new-result.txt\")\n>>> test.merge(\"new.txt\",x,\"new-result.txt\")\n>>> test.merge(\"old.txt\",x,\"new-result.txt\")\n>>> ^Z"]}

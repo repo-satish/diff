@@ -1,0 +1,15 @@
+abc
+gi
+def
+
+
+
+>>> import test
+>>> x = test.diff_files("old.txt","new.txt")
+>>> x
+{4: ['d', 'g'], 5: ['e', 'i'], 6: ['f', '\n']
+>>> test.merge("old.txt",x,"new-result.txt")
+>>> test.merge("new.txt",x,"new-result.txt")
+>>> test.merge("new.txt",x,"new-result.txt")
+>>> test.merge("old.txt",x,"new-result.txt")
+>>> ^Z
